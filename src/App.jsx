@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./components/Counter";
+import Exponent from "./components/Exponent/Exponent"
 import ExponentTwo from "./components/ExponentTwo";
 import ExponentThree from "./components/ExponentThree";
 import ExponentFour from "./components/ExponentFour";
@@ -27,11 +28,11 @@ function App() {
       <h2><em>Exponents</em></h2>
 
       <div className="container">
-        <ExponentTwo exponentsCount={exponentsCount} />
-        <ExponentThree exponentsCount={exponentsCount} />
-        <ExponentFour exponentsCount={exponentsCount} />
-        <ExponentFive exponentsCount={exponentsCount} />
-        <ExponentSix exponentsCount={exponentsCount} />
+        <Exponent num={exponentsCount} exponent={2} />
+        <Exponent num={exponentsCount} exponent={3} />
+        <Exponent num={exponentsCount} exponent={4} />
+        <Exponent num={exponentsCount} exponent={5} />
+        <Exponent num={exponentsCount} exponent={6} />
       </div>
     </div>
   );
