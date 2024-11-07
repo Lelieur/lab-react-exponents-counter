@@ -1,8 +1,15 @@
-const ExponentFour = () => (
-   <div className="exponent-counter-container">
-    <p className="exponent-label">n⁴</p>
-    <p className="exponent-result">2 * 2 * 2 * 2 = <span className="total">16</span></p>
-  </div>
-);
+const ExponentFour = ({ exponentsCount }) => {
+
+  const operator = exponentsCount ** 4
+
+  return (
+
+    <div className="exponent-counter-container">
+      <p className="exponent-label">{exponentsCount}⁴</p>
+      <p className="exponent-result">{exponentsCount} * {exponentsCount} * {exponentsCount} * {exponentsCount}= <span className="total">{operator}</span></p>
+    </div>
+
+  )
+};
 
 export default ExponentFour;
